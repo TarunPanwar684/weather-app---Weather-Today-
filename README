@@ -1,0 +1,22 @@
+# Weather App
+
+This is a weather application that allows users to check the current weather conditions for different locations using the Weather API by API Ninjas.
+
+## Features
+
+- **Current Weather:** Get real-time weather information including temperature, humidity, wind speed, and more for specific cities.
+- **Search Functionality:** Enter the name of the city to fetch the weather details.
+- **Responsive Design:** The app is designed to be responsive, ensuring a seamless experience across various devices.
+
+## API Integration
+
+This app uses the Weather API by API Ninjas to retrieve weather data. You will need to sign up on the [API Ninjas website](https://rapidapi.com/developer/account) to obtain an API key. Add your API key to the `index.js` file as shown below:
+
+```javascript
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'YOUR_API_KEY_HERE',
+		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+	}
+};
